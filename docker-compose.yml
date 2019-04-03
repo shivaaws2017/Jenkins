@@ -5,7 +5,7 @@ services:
     ports:
     - 80:80
     deploy:
-      replicas: 1
+      replicas: 2
     networks:
     - Jenkinet
   Backend:
