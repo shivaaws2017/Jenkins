@@ -1,0 +1,16 @@
+version: '3'
+services:
+  Frontend:
+    image: drupal
+    Ports:
+    - 80:80
+    networks:
+    - Jenkinet
+      Backend:
+     image: postgres
+     environment:
+     - POSTGRES_PASSWORD=123456
+     networks:
+     - Jenkinet
+networks:
+   Jenkinet
